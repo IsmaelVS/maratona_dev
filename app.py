@@ -33,9 +33,9 @@ def home():
     """Rota para exibir página e cadastrar novo doador."""
 
     if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        blood = request.form.get('blood')
+        name = request.form.get('name', '')
+        email = request.form.get('email', '')
+        blood = request.form.get('blood', '')
 
         doner = Doner(name=name, email=email, blood=blood)
 
