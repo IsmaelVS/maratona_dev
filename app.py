@@ -42,8 +42,9 @@ def home():
         db.session.add(doner)
         db.session.commit()
 
-        return render_template('index.html')
-    return render_template('index.html')
+    doners = db.session.query(Doner).all()
+
+    return render_template('index.html', doners=doners)
 
 
 if __name__ == '__main__':
