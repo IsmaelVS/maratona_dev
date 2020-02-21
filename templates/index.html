@@ -4,13 +4,13 @@
   <head>
     <title>Doe vida! Doe sangue</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="icon" type="imagem/png" href="icone.jpg" />
+    <link rel="icon" type="imagem/png" href="{{ url_for('static', filename='icone.png') }}" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <img class="logo" src="logo.png" alt="Imagem de DOE"></img>
+      <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Imagem de DOE"></img>
       <h2>A sua doação importa</h2>
       <p>Até 3 vidas com 1 doação</p>
       <p>Mais de 38.000 doações são necessárias todos os dias</p>
@@ -62,7 +62,7 @@
       </section>
     </main>
 
-    <footer>By DjangoBrown 💗</footer>
+    <footer>By DjangoBrown!!</footer>
     <script src="{{url_for('static', filename='scripts.js')}}"></script>
   </body>
 </html>
