@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Doe vida! Doe sangue</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" type="imagem/png" href="icone.jpg" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   </head>
@@ -20,7 +20,7 @@
 
     <section class="form hide">
       <h2>Entre na lista de doadores</h2>
-      <form action="/" method="POST">
+      <form action="/">
         <input
           type="text"
           name="name"
@@ -63,6 +63,6 @@
     </main>
 
     <footer>By DjangoBrown 💗</footer>
-    <script src="scripts.js"></script>
+    <script src="{{url_for('static', filename='scripts.js')}}"></script>
   </body>
 </html>
